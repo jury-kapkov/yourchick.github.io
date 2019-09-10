@@ -783,6 +783,27 @@ footer {
 	.control {
 		margin-bottom: 25px;
 	}
+	nav {
+		display: block;
+	}
+	.navLogo {
+		text-align: center;
+	}
+	.mainMenu {
+	    margin-top: 15px;
+	    display: flex;
+	    justify-content: space-between;
+	    flex-wrap: wrap;
+	}
+	.mainMenuItem {
+		margin-left: 0;
+	}
+	.freeCell {
+		display: none;
+	}
+	.footer {
+		justify-content: left;
+	}
 }
 
 @media (max-width: 600px) {
@@ -798,5 +819,20 @@ footer {
 	}
 	.wrapper {
 		padding: 0 20px;
+	}
+	.contacts, .program, .shedules {
+		padding: 35px 0;
+	}
+	footer {
+		padding: 20px 0;
+	}
+	.speakers {
+		padding-top: 35px;
+	}
+	.container {
+		margin-bottom: 0px!important;
+	}
+	.map {
+		margin-top: 35px;
 	}
 }
