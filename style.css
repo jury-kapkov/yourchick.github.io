@@ -851,4 +851,7 @@ footer {
 	.buttonMore {
 		margin-top: 0;
 	}
+	.none {
+	    margin-top: 20px;
+	}
 }
