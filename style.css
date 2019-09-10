@@ -848,4 +848,7 @@ footer {
 	#speaker1 {
 		padding: 30px 0;
 	}
+	.buttonMore {
+		margin-top: 0;
+	}
 }
