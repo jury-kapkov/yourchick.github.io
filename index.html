@@ -25,6 +25,30 @@
 		        }, 500);
 		        return false;
 		    });
+		    $('#program').click(function () {
+		        $('body,html').animate({
+		            scrollTop: $('#programs').offset().top
+		        }, 500);
+		        return false;
+		    });
+		     $('#speaker').click(function () {
+		        $('body,html').animate({
+		            scrollTop: $('#speakers').offset().top
+		        }, 500);
+		        return false;
+		    });
+		      $('#shedule').click(function () {
+		        $('body,html').animate({
+		            scrollTop: $('#shedules').offset().top
+		        }, 500);
+		        return false;
+		    });
+		    $('#contact').click(function () {
+		        $('body,html').animate({
+		            scrollTop: $('#contacts').offset().top
+		        }, 500);
+		        return false;
+		    });
 		    
 		});
 	</script>
@@ -36,10 +60,10 @@
 				<div class="navLogo">SAY <span class="blue_color">IT</span></div>
 				<ul class="mainMenu">
 					<li class="mainMenuItem"><a href="#home">Home</a></li>
-					<li class="mainMenuItem"><a href="#program">Programs</a></li>
-					<li class="mainMenuItem"><a href="#speakers">Speaker</a></li>
-					<li class="mainMenuItem"><a href="#shedules">Shedule</a></li>
-					<li class="mainMenuItem"><a href="#contacts">Contact</a></li>
+					<li class="mainMenuItem" id="programs"><a href="#program">Programs</a></li>
+					<li class="mainMenuItem" id="speaker"><a href="#speakers">Speaker</a></li>
+					<li class="mainMenuItem" id="shedule"><a href="#shedules">Shedule</a></li>
+					<li class="mainMenuItem" id="contact"><a href="#contacts">Contact</a></li>
 				</ul>
 				<div class="button_register hide">
 					registration
@@ -72,7 +96,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="program" id="program">
+	<section class="program" id="programs">
 		<div class="wrapper">
 			<div class="container">
 				<div class="left">
