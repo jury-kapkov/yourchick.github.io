@@ -749,6 +749,7 @@ footer {
 	}
 	#speaker2 {
 		background-image: url(img/speak2.png);
+		background-repeat: no-repeat;
 	}
 	.montsSheildCart {
 		font-size: 24px;
