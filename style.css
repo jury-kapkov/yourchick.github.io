@@ -656,6 +656,15 @@ footer {
 }
 
 @media (max-width: 900px) {
+	.SAYIT {
+		font-size: 100px;
+	}
+	.CONFERENCE {
+		font-size: 40px;
+	}
+	.a2019 {
+		font-size: 100px;
+	}
 	.container {
 		display: block;
 	}
