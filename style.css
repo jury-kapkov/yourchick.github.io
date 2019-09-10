@@ -750,4 +750,28 @@ footer {
 	#speaker2 {
 		background-image: url(img/speak2.png);
 	}
+	.montsSheildCart {
+		font-size: 24px;
+	}
+	.nameSheildCart {
+		font-size: 14px;
+	}
+	.timeSheildCart {
+		font-size: 14px;
+	}
+	.nameAuthor {
+		font-size: 14px;
+	}
+	.dayShedule {
+		font-size: 68px;
+	}
+	.dateShaild {
+		flex-basis: 40%;
+	}
+	.cells {
+		font-size: 18px;
+	}
+	h2 {
+		font-size: 36px;
+	}
 }
