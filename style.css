@@ -777,4 +777,7 @@ footer {
 	.tableBody {
 	        padding: 0;
 	}
+	.table {
+		padding-bottom: 25px;
+	}
 }
