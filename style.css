@@ -627,7 +627,7 @@ footer {
 
 #map {
 	position: relative;
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 /*#map:before {
@@ -699,6 +699,7 @@ footer {
 		height: 300px;
 		overflow: hidden;
 		margin-top: 50px;
+		overflow: hidden;
 	}
 	.logoRed {
 		display: none;
