@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/72634a5f69.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+	<script type="text/javascript">
+	  var myMap;
+	  ymaps.ready(init); // Ожидание загрузки API с сервера Яндекса
+	  function init () {
+	    myMap = new ymaps.Map("map", {
+	      center: [55.76, 37.64], // Координаты центра карты
+	      zoom: 10 // Zoom
+	    });
+	  }
+	</script>
+	<title>SAY IT</title>
+	<script>
+	 $(document).ready(function(){
+		    $('#button-up').click(function () {
+		        $('body,html').animate({
+		            scrollTop: 0
+		        }, 500);
+		        return false;
+		    });
+		    
+		});
+	</script>
+</head>
+<body>
+	<header id="home">
+		<div class="wrapper">
+			<nav>
+				<div class="navLogo">SAY <span class="blue_color">IT</span></div>
+				<ul class="mainMenu">
+					<li class="mainMenuItem"><a href="#home">Home</a></li>
+					<li class="mainMenuItem"><a href="#program">Programs</a></li>
+					<li class="mainMenuItem"><a href="#speakers">Speaker</a></li>
+					<li class="mainMenuItem"><a href="#shedules">Shedule</a></li>
+					<li class="mainMenuItem"><a href="#contacts">Contact</a></li>
+				</ul>
+				<div class="button_register hide">
+					registration
+				</div>
+			</nav>
+			<div class="headerBody">
+				<div class="left padding-left-100">
+					<div class="dateOfEvant">Wednesday october 1, 2019 | 6:00 AM</div>
+					<span class="SAYIT">SAY IT</span>
+					<span class="CONFERENCE">CONFERENCE</span>
+					<span class="a2019">2019</span>
+				</div>
+				<div class="right">
+					<div class="dateLeft" id="daysBox">
+						<div class="numberDate">23</div>
+						<div class="dateName" id="days">Days</div>
+					</div>
+					<div class="dateLeft" id="hoersBox">
+						<div class="numberDate">10</div>
+						<div class="dateName" id="hours">Hours</div>
+					</div>
+					<div class="dateLeft" id="minutesBox">
+						<div class="numberDate">48</div>
+						<div class="dateName" id="minutes">Minutes</div>
+					</div>
+				</div>
+				<div class="button_register none">
+					registration
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="program" id="program">
+		<div class="wrapper">
+			<div class="container">
+				<div class="left">
+					<h2><span class="blue_color">SAY IT</span> evant<br>program</h2>
+					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+					<p>Content here, content here', making it look like readable English.v Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and.</p>
+					<div class="control">
+						<span class="active">01</span>
+						<span class="nextSlide">/02</span>
+						<div class="circule">
+							<i class="fas fa-chevron-left"></i>
+						</div>
+						<div class="circuleAct">
+							<i class="fas fa-chevron-right activeB"></i>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="programInfo">
+						<i class="fas fa-users programIcon"></i>
+						<section>
+							<h3 class="title">COMMUNICATION</h3>
+							<p class="programText">There are many variations of passages of Lorem Ipsum available, but the majority</p>
+						</section>
+					</div>
+					<div class="programInfo">
+						<i class="fas fa-graduation-cap programIcon"></i>
+						<section>
+							<h3 class="title">learning</h3>
+							<p class="programText">There are many variations of passages of Lorem Ipsum available, but the majority Content here, content here', making it look like </p>
+						</section>
+					</div>
+					<div class="programInfo">
+						<i class="fas fa-laptop-code programIcon"></i>
+						<section>
+							<h3 class="title">technologies</h3>
+							<p class="programText">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta</p>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="speakers" id="speakers">
+		<div class="wrapper">
+			<div class="container" id="speaker1" style="margin-bottom: 200px;">
+				<img src="img/decorRedLeft.png" alt="" class="decor">
+				<div class="left" style="position: relative;">
+					<img class="speakerImgLeft" src="img/speaker1.png" alt="">
+				</div>
+				<div class="right">
+					<h2 class="titleMarginBottom"><span class="blue_color">SPECIAL</span> speakers<br>of conference </h2>
+					<div class="nameSpeaker">Elon Musk</div>
+					<div class="jobSpeaker">Founder, CEO, Lead Designer of SpaceX</div>
+					<span class="redLine"></span>
+					<p class="descriptionSpeaker">
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the.
+					</p>
+					<p class="descriptionSpeaker">
+						No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who.
+					</p>
+					<div class="follow">Follow me</div>
+					<div class="socialButtons">
+						<i class="fab fa-facebook-f social"></i>
+						<i class="fab fa-twitter social"></i>
+						<i class="fab fa-linkedin-in social"></i>
+					</div>
+					<img src="img/decorRedRight.png" alt="" class="decor" style="right: 0">
+				</div>
+			</div>
+
+
+			<div class="container" id="speaker2" style="margin-bottom: 90px;">
+				<div class="left" style="position: relative; z-index: 2">
+
+					<div class="nameSpeaker">Mark Zuckerberg</div>
+					<div class="jobSpeaker">Technology entrepreneur</div>
+					<span class="redLine"></span>
+					<p class="descriptionSpeaker">
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+					</p>
+					<p class="descriptionSpeaker">
+						No one rejects, dislikesdeleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati .
+					</p>
+					<div class="follow">Follow me</div>
+					<div class="socialButtons">
+						<i class="fab fa-facebook-f social"></i>
+						<i class="fab fa-twitter social"></i>
+						<i class="fab fa-linkedin-in social"></i>
+					</div>
+				</div>
+				<div class="right">
+					<img class="speakerImgRight" src="img/speak2.png" alt="" >
+				</div>
+			</div>
+			<div class="button_register buttonMore">
+				More speaker
+			</div>
+		</div>
+	</section>
+	<section class="shedules" id="shedules">
+		<div class="wrapper">
+			<div style="position: relative;">
+				<img src="img/decorBlueRight.png" alt="" class="decor" style="right: 0">
+				<h2><span class="blue_color">Shedules</span><br>Conference</h2>
+				<div class="table">
+					<span class="freeCell"></span>
+					<span class="cells activeCell">DAY1</span>
+					<span class="cells">DAY2</span>
+					<span class="cells">DAY3</span>
+					<span class="freeSpace"></span>
+				</div>
+				<div class="tableBody">
+					<div class="shedule">
+						<div class="dateShaild">
+							<div class="dayShedule">2</div>
+							<div class="dateSheildCart">
+								<div class="montsSheildCart">October</div>
+								<div class="timeSheildCart">06:00AM - 06:45AM</div>
+							</div>
+						</div>
+						<div class="imgSheild">
+							<img src="img/sheild1.png" alt="">
+						</div>
+						<div class="nameShaild">
+							<div class="dateSheildCart">
+								<div class="montsSheildCart">Lorem ipsum</div>
+								<div class="nameSheildCart">BY: <span class="nameAuthor">JOHN MASLOV</span> CEO</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="shedule">
+						<div class="dateShaild">
+							<div class="dayShedule">2</div>
+							<div class="dateSheildCart">
+								<div class="montsSheildCart">October</div>
+								<div class="timeSheildCart">07:00AM - 07:45AM</div>
+							</div>
+						</div>
+						<div class="imgSheild">
+							<img src="img/sheild2.png" alt="">
+						</div>
+						<div class="nameShaild">
+							<div class="dateSheildCart">
+								<div class="montsSheildCart">Sit amet ipsum</div>
+								<div class="nameSheildCart">BY: <span class="nameAuthor">DANIIL IVANOV</span> Web-expert</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="shedule">
+						<div class="dateShaild">
+							<div class="dayShedule">2</div>
+							<div class="dateSheildCart">
+								<div class="montsSheildCart">October</div>
+								<div class="timeSheildCart">08:00AM - 08:45AM</div>
+							</div>
+						</div>
+						<div class="imgSheild">
+							<img src="img/sheild3.png" alt="">
+						</div>
+						<div class="nameShaild">
+							<div class="dateSheildCart">
+								<div class="montsSheildCart">Dolor si amet</div>
+								<div class="nameSheildCart">BY: <span class="nameAuthor">ROBERT MARKUS</span> PROGRAMMER</div>
+							</div>
+						</div>
+					</div>
+					<div class="button_register dowmloadButton">
+						Download PDF
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contacts" id="contacts">
+		<div class="wrapper">
+			<div class="container">
+				<div class="left">
+					<h2 style="margin-bottom: 10px">Our contacts</h2>
+					<p class="infoContact">
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+					</p>
+					<h4>Address</h4>
+					<p class="infoContact">
+						Nor again is there anyone who loves  48/1
+					</p>
+					<h4>Phone</h4>
+					<p class="infoContact">
+						+380123567890
+					</p>
+					<h4>Email</h4>
+					<p class="infoContact">
+						info@sayit.com
+					</p>
+					<h4>Social</h4>
+					<div class="socialButtons footer" >
+						<i class="fab fa-facebook-f socialFooter"></i>
+						<i class="fab fa-twitter socialFooter"></i>
+						<i class="fab fa-linkedin-in socialFooter"></i>
+					</div>
+				</div>
+				<div class="right map">
+					<div id="map" style="width: 100%; height: 100%"></div>
+					<!-- <img src="img/map.png" alt=""> -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="wrapper">
+			<div class="setTop" id="button-up">
+				<div class="fas fa-chevron-up redLabel"></div>
+				<div class="redLabel">BACK TO TOP</div>
+			</div>
+			<span class="lineFooter"></span>
+			<div class="container" style="align-items: center;">
+				<div class="logoRed">
+					SAY IT
+				</div>
+				<ul class="footerNav">
+					<li class="mainMenuItem footerMenuItem"><a href="#home">Home</a></li>
+					<li class="mainMenuItem footerMenuItem"><a href="#program">Programs</a></li>
+					<li class="mainMenuItem footerMenuItem"><a href="#speakers">Speaker</a></li>
+					<li class="mainMenuItem footerMenuItem"><a href="#shedules">Shedule</a></li>
+					<li class="mainMenuItem footerMenuItem"><a href="#contacts">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
