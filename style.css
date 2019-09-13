@@ -7,6 +7,7 @@
 body {
 	font-family: "Lato";
 	color: white;
+	min-width: 300px;
 }
 
 header {
@@ -277,12 +278,7 @@ h2 {
 }
 
 .circuleAct {
-	height: 50px;
-	width: 50px;
-	border-radius: 50%;
 	border: 2px solid #b21b5a;
-	text-align: center;
-	opacity: 0.8;
 	transition: opacity 0.3s;
 }
 
@@ -756,7 +752,8 @@ footer {
 		margin-bottom: 50px !important;
 	}
 	.buttonMore {
-		margin: 50px auto;
+		margin: 0 auto;
+		margin-top: 50px;
 	}
 	.social {
 		margin: 0 25px;
@@ -830,12 +827,21 @@ footer {
 	.footer {
 		justify-content: left;
 	}
+	#speaker2 {
+	    padding: 50px 5px;
+	}
+	#speaker1 {
+	    padding: 50px 5px;
+	}
 }
 
 @media (max-width: 600px) {
 	.dateLeft {
 		width: 100px;
 		height: 100px;
+	}
+	.dateLeft:first-child {
+		margin-left: 0;
 	}
 	.numberDate {
 		font-size: 40px;
@@ -878,5 +884,139 @@ footer {
 	}
 	.none {
 	    margin-top: 20px;
+	}
+	.mainMenuItem {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 400px) {
+	.dateLeft {
+	    width: 75px;
+	    height: 75px;
+	}
+	.numberDate {
+	    font-size: 30px;
+	}
+	.numberDate {
+	    margin-top: 10px;
+	}
+	.dateName {
+		font-size: 12px;
+	}
+	.SAYIT {
+	    font-size: 50px;
+	}
+	.a2019 {
+	    font-size: 50px;
+	}
+	.headerBody {
+	    margin-top: 20px;
+	}
+	.mainMenuItem {
+		font-size: 14px;
+		margin: 5px;
+	}
+	.mainMenu {
+		 justify-content: center;
+	}
+	.padding-left-100 {
+	    padding: 0;
+	    margin-bottom: 10px;
+	}
+	.none {
+	    margin-top: 0;
+	}
+	.contacts{
+	    text-align: justify;
+	    text-align-last: center;
+	}
+	.footer {
+	    justify-content: center;
+	}
+
+	.footer > a {
+		width: 50px;
+		margin-right: 20px;
+	}
+
+	.footer > a:last-child{
+		margin-right: 0;
+	}
+	.descriptionSpeaker {
+		font-size: 16px !important;
+	}
+	.speakers {
+	    padding: 50px 0;
+	}
+	.infoContact {
+		font-size: 16px !important;
+	}
+	h4 {
+	    font-size: 24px;
+	}
+	h2 {
+	    font-size: 32px;
+	}
+	.nameSpeaker {
+	    font-size: 26px;
+	}
+	.jobSpeaker {
+	    font-size: 20px;
+	}
+	#speaker1, #speaker2{
+	    padding-right: 10px;
+	}
+	.shedule {
+		display: block;
+		height: auto;
+		padding: 5px 10px;
+	}
+	.person {
+		display: flex;
+		align-items: center;
+	}
+	.person img {
+		height: 75px;
+	}
+	.dayShedule {
+	    font-size: 50px;
+	}
+	.montsSheildCart {
+	    font-size: 18px;
+	}
+	.nameSheildCart {
+	    font-size: 12px;
+	}
+	.programInfo i{
+		font-size: 36px;
+	}
+	.dateLeft {
+		margin-left: 10px;
+	}
+	.CONFERENCE {
+	    font-size: 36px;
+	}
+	.button_register {
+	    font-size: 14px;
+	    width: 140px;
+	    padding: 0px;
+	    line-height: 40px;
+	}
+	.nextSlide {
+		margin-right: 20px;
+	}
+	.circule {
+		width: 40px;
+		height: 40px;
+	}
+	.control i {
+	    line-height: 40px;
+	}
+	.slide {
+		text-align: justify;
+	}
+	.container {
+	    padding: 0 10px;
 	}
 }

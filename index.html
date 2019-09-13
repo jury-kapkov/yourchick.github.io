@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://kit.fontawesome.com/72634a5f69.js"></script>
+	<!-- <script src="https://kit.fontawesome.com/72634a5f69.js"></script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+	<link href="css/all.css" rel="stylesheet">
 	<script type="text/javascript">
 	  var myMap;
 	  ymaps.ready(init); // Ожидание загрузки API с сервера Яндекса
@@ -27,6 +28,7 @@
 		        }, 500);
 		        return false;
 		    });
+
 		    $('#program').click(function () {
 		        $('body,html').animate({
 		            scrollTop: $('#programs').offset().top
@@ -51,6 +53,40 @@
 		        }, 500);
 		        return false;
 		    });
+
+ 			$('#homeFooter').click(function () {
+		        $('body,html').animate({
+		            scrollTop: 0
+		        }, 900);
+		        return false;
+		    });
+
+		     $('#programFooter').click(function () {
+		        $('body,html').animate({
+		            scrollTop: $('#programs').offset().top
+		        }, 700);
+		        return false;
+		    });
+		     $('#speakerFooter').click(function () {
+		        $('body,html').animate({
+		            scrollTop: $('#speakers').offset().top
+		        }, 600);
+		        return false;
+		    });
+		      $('#sheduleFooter').click(function () {
+		        $('body,html').animate({
+		            scrollTop: $('#shedules').offset().top
+		        }, 500);
+		        return false;
+		    });
+		    $('#contactFooter').click(function () {
+		        $('body,html').animate({
+		            scrollTop: $('#contacts').offset().top
+		        }, 400);
+		        return false;
+		    });
+
+
 		     $( "#nextSlide" ).click(function(){ 
 		     	if ( $("#nextSlide").hasClass("circuleAct")) {
 			     	let width = $('div.slide').width();
@@ -202,9 +238,9 @@
 					</p>
 					<div class="follow">Follow me</div>
 					<div class="socialButtons">
-						<i class="fab fa-facebook-f social"></i>
-						<i class="fab fa-twitter social"></i>
-						<i class="fab fa-linkedin-in social"></i>
+						<a href="https://www.facebook.com/elonreevesmusk/ " target="_blank"><i class="fab fa-facebook-f social"></i></a>
+						<a href="https://twitter.com/elonmusk" target="_blank"><i class="fab fa-twitter social"></i></a>
+						<a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin-in social"></i></a>
 					</div>
 					<img src="img/decorRedRight.png" alt="" class="decor" style="right: 0">
 				</div>
@@ -225,9 +261,9 @@
 					</p>
 					<div class="follow">Follow me</div>
 					<div class="socialButtons">
-						<i class="fab fa-facebook-f social"></i>
-						<i class="fab fa-twitter social"></i>
-						<i class="fab fa-linkedin-in social"></i>
+						<a href="https://www.facebook.com/4/B" target="_blank"><i class="fab fa-facebook-f social"></i></a>
+						<a href="https://twitter.com/finkd" target="_blank"><i class="fab fa-twitter social"></i></a>
+						<a href="https://www.linkedin.com/search/results/people/?firstName=Mark&lastName=Zuckerberg&origin=SEO_SN" target="_blank"><i class="fab fa-linkedin-in social"></i></a>
 					</div>
 				</div>
 				<div class="right">
@@ -260,13 +296,15 @@
 								<div class="timeSheildCart">06:00AM - 06:45AM</div>
 							</div>
 						</div>
-						<div class="imgSheild">
-							<img src="img/sheild1.png" alt="">
-						</div>
-						<div class="nameShaild">
-							<div class="dateSheildCart">
-								<div class="montsSheildCart">Lorem ipsum</div>
-								<div class="nameSheildCart">BY: <span class="nameAuthor">JOHN MASLOV</span> CEO</div>
+						<div class="person">
+							<div class="imgSheild">
+								<img src="img/sheild1.png" alt="">
+							</div>
+							<div class="nameShaild">
+								<div class="dateSheildCart">
+									<div class="montsSheildCart">Lorem ipsum</div>
+									<div class="nameSheildCart">BY: <span class="nameAuthor">JOHN MASLOV</span> CEO</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -279,13 +317,15 @@
 								<div class="timeSheildCart">07:00AM - 07:45AM</div>
 							</div>
 						</div>
-						<div class="imgSheild">
-							<img src="img/sheild2.png" alt="">
-						</div>
-						<div class="nameShaild">
-							<div class="dateSheildCart">
-								<div class="montsSheildCart">Sit amet ipsum</div>
-								<div class="nameSheildCart">BY: <span class="nameAuthor">DANIIL IVANOV</span> Web-expert</div>
+						<div class="person">
+							<div class="imgSheild">
+								<img src="img/sheild2.png" alt="">
+							</div>
+							<div class="nameShaild">
+								<div class="dateSheildCart">
+									<div class="montsSheildCart">Sit amet ipsum</div>
+									<div class="nameSheildCart">BY: <span class="nameAuthor">DANIIL IVANOV</span> Web-expert</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -298,13 +338,15 @@
 								<div class="timeSheildCart">08:00AM - 08:45AM</div>
 							</div>
 						</div>
-						<div class="imgSheild">
-							<img src="img/sheild3.png" alt="">
-						</div>
-						<div class="nameShaild">
-							<div class="dateSheildCart">
-								<div class="montsSheildCart">Dolor si amet</div>
-								<div class="nameSheildCart">BY: <span class="nameAuthor">ROBERT MARKUS</span> PROGRAMMER</div>
+						<div class="person">
+							<div class="imgSheild">
+								<img src="img/sheild3.png" alt="">
+							</div>
+							<div class="nameShaild">
+								<div class="dateSheildCart">
+									<div class="montsSheildCart">Dolor si amet</div>
+									<div class="nameSheildCart">BY: <span class="nameAuthor">ROBERT MARKUS</span> PROGRAMMER</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -337,9 +379,9 @@
 					</p>
 					<h4>Social</h4>
 					<div class="socialButtons footer" >
-						<i class="fab fa-facebook-f socialFooter"></i>
-						<i class="fab fa-twitter socialFooter"></i>
-						<i class="fab fa-linkedin-in socialFooter"></i>
+						<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f socialFooter"></i></a>
+						<a href="https://twitter.com" target="_blank"><i class="fab fa-twitter socialFooter"></i></a>
+						<a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in socialFooter"></i></a>
 					</div>
 				</div>
 				<div class="right map">
@@ -361,11 +403,11 @@
 					SAY IT
 				</div>
 				<ul class="footerNav">
-					<li class="mainMenuItem footerMenuItem"><a href="#home">Home</a></li>
-					<li class="mainMenuItem footerMenuItem"><a href="#program">Programs</a></li>
-					<li class="mainMenuItem footerMenuItem"><a href="#speakers">Speaker</a></li>
-					<li class="mainMenuItem footerMenuItem"><a href="#shedules">Shedule</a></li>
-					<li class="mainMenuItem footerMenuItem"><a href="#contacts">Contact</a></li>
+					<li class="mainMenuItem footerMenuItem" id="homeFooter"><a href="#home">Home</a></li>
+					<li class="mainMenuItem footerMenuItem" id="programFooter"><a href="#program">Programs</a></li>
+					<li class="mainMenuItem footerMenuItem" id="speakerFooter"><a href="#speakers">Speaker</a></li>
+					<li class="mainMenuItem footerMenuItem" id="sheduleFooter"><a href="#shedules">Shedule</a></li>
+					<li class="mainMenuItem footerMenuItem" id="contactFooter"><a href="#contacts">Contact</a></li>
 				</ul>
 			</div>
 		</div>
