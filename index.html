@@ -51,6 +51,36 @@
 		        }, 500);
 		        return false;
 		    });
+		     $( "#nextSlide" ).click(function(){ 
+		     	if ( $("#nextSlide").hasClass("circuleAct")) {
+			     	let width = $('div.slide').width();
+				    $( "#slide1" ).animate({
+				      left: -width -100,
+				      }, 700); 
+				    $( "#slide2" ).animate({
+				      left: -width,
+				      }, 700);
+				    $("#prevSlide").addClass("circuleAct");
+				    $("#nextSlide").removeClass("circuleAct");
+				    $(".active").text("02");
+				    $(".nextSlide").text("/01");
+				}
+			  });
+
+		      $( "#prevSlide" ).click(function(){ 
+		      	if ( $("#prevSlide").hasClass("circuleAct")) {
+				    $( "#slide1" ).animate({
+				      left: 0,
+				      }, 700); 
+				    $( "#slide2" ).animate({
+				      left: 0,
+				      }, 700);
+				    $("#nextSlide").addClass("circuleAct");
+				    $("#prevSlide").removeClass("circuleAct");
+				     $(".active").text("01");
+				    $(".nextSlide").text("/02");
+				}
+			  });
 		    
 		});
 	</script>
@@ -103,15 +133,25 @@
 			<div class="container">
 				<div class="left">
 					<h2><span class="blue_color">SAY IT</span> evant<br>program</h2>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
-					<p>Content here, content here', making it look like readable English.v Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and.</p>
+					<div class="containerForSLider">
+						<div class="slider">
+							<div class="slide" id="slide1">
+								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+								<p>Content here, content here', making it look like readable English.v Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and.</p>
+							</div>
+							<div class="slide" id="slide2">
+								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+								<p>Content here, content here', making it look like readable English.v Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and.</p>
+							</div>
+						</div>
+					</div>
 					<div class="control">
 						<span class="active">01</span>
 						<span class="nextSlide">/02</span>
-						<div class="circule">
+						<div class="circule" = id="prevSlide">
 							<i class="fas fa-chevron-left"></i>
 						</div>
-						<div class="circuleAct">
+						<div class="circule circuleAct" id="nextSlide">
 							<i class="fas fa-chevron-right activeB"></i>
 						</div>
 					</div>

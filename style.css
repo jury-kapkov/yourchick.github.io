@@ -199,7 +199,26 @@ nav {
 #minutesBox {
 	border-bottom: 2px solid #580eea;
 }
+/*Slider */
 
+.containerForSLider {
+	position: relative;
+	overflow: hidden;
+}
+.slider {
+	width: 200%;
+	display: flex;
+}
+
+.slide {
+	width: 50%;
+	position: relative;
+	display: inline-block;
+}
+
+
+
+/*---------*/
 .program {
 	padding: 100px 0;
     background-image: -moz-linear-gradient( -144deg, rgb(178,27,90) 0%, rgb(29,15,82) 100%);
@@ -263,6 +282,12 @@ h2 {
 	border-radius: 50%;
 	border: 2px solid #b21b5a;
 	text-align: center;
+	opacity: 0.8;
+	transition: opacity 0.3s;
+}
+
+.circuleAct:hover {
+	opacity: 1;
 }
 
 .fa-chevron-left, .fa-chevron-right {
@@ -849,7 +874,7 @@ footer {
 		padding: 30px 0;
 	}
 	.buttonMore {
-		margin-top: 0;
+		margin-top: 0;	
 	}
 	.none {
 	    margin-top: 20px;
