@@ -544,6 +544,11 @@ h2 {
 	font-size: 20px;
 }
 
+.person {
+    display: flex;
+    align-items: center;
+}
+
 .dowmloadButton {
 	background-size: 200%;
 	margin-top: 50px;
