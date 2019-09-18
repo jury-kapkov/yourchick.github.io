@@ -7,9 +7,8 @@
 	<!-- <script src="https://kit.fontawesome.com/72634a5f69.js"></script> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
-	<script src="https://kit.fontawesome.com/72634a5f69.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-<!-- 	<link href="all.css" rel="stylesheet"> -->
+	<link href="css/all.css" rel="stylesheet">
 	<script type="text/javascript">
 	  var myMap;
 	  ymaps.ready(init); // Ожидание загрузки API с сервера Яндекса
@@ -117,6 +116,37 @@
 				     $(".active").text("01");
 				    $(".nextSlide").text("/02");
 				}
+			  });
+
+			  $( "#day1" ).click(function(){ 
+			  		$( "#day1" ).addClass("activeCell");
+			   		$( "#day2" ).removeClass("activeCell");
+			   		$( "#day3" ).removeClass("activeCell");
+
+		      		$("#tableDay1").removeClass("tableNone");
+		      		$("#tableDay2").addClass("tableNone");
+		      		$("#tableDay3").addClass("tableNone");
+			  });
+
+			   $( "#day2" ).click(function(){ 
+			   		$( "#day2" ).addClass("activeCell");
+			   		$( "#day1" ).removeClass("activeCell");
+			   		$( "#day3" ).removeClass("activeCell");
+
+		      		$("#tableDay1").addClass("tableNone");
+		      		$("#tableDay2").removeClass("tableNone");
+		      		$("#tableDay3").addClass("tableNone");
+			  });
+
+			    $( "#day3" ).click(function(){ 
+
+			    	$( "#day3" ).addClass("activeCell");
+			   		$( "#day1" ).removeClass("activeCell");
+			   		$( "#day2" ).removeClass("activeCell");
+
+		      		$("#tableDay1").addClass("tableNone");
+		      		$("#tableDay2").addClass("tableNone");
+		      		$("#tableDay3").removeClass("tableNone");
 			  });
 		    
 		});
@@ -273,7 +303,7 @@
 				</div>
 			</div>
 			<div class="button_register buttonMore">
-				More speaker
+				<a href="https://yandex.ru/">More speaker</a>
 			</div>
 		</div>
 	</section>
@@ -284,76 +314,210 @@
 				<h2><span class="blue_color">Shedules</span><br>Conference</h2>
 				<div class="table">
 					<span class="freeCell"></span>
-					<span class="cells activeCell">DAY1</span>
-					<span class="cells">DAY2</span>
-					<span class="cells">DAY3</span>
+					<span class="cells activeCell" id="day1">DAY1</span>
+					<span class="cells" id="day2">DAY2</span>
+					<span class="cells" id="day3">DAY3</span>
 					<span class="freeSpace"></span>
 				</div>
 				<div class="tableBody">
-					<div class="shedule">
-						<div class="dateShaild">
-							<div class="dayShedule">2</div>
-							<div class="dateSheildCart">
-								<div class="montsSheildCart">October</div>
-								<div class="timeSheildCart">06:00AM - 06:45AM</div>
+
+					<div id="tableDay1">
+						<div class="shedule">
+							<div class="dateShaild">
+								<div class="dayShedule">2</div>
+								<div class="dateSheildCart">
+									<div class="montsSheildCart">October</div>
+									<div class="timeSheildCart">06:00AM - 06:45AM</div>
+								</div>
+							</div>
+							<div class="person">
+								<div class="imgSheild">
+									<img src="img/sheild1.png" alt="">
+								</div>
+								<div class="nameShaild">
+									<div class="dateSheildCart">
+										<div class="montsSheildCart">Lorem ipsum</div>
+										<div class="nameSheildCart">BY: <span class="nameAuthor">JOHN MASLOV</span> CEO</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="person">
-							<div class="imgSheild">
-								<img src="img/sheild1.png" alt="">
-							</div>
-							<div class="nameShaild">
+
+						<div class="shedule">
+							<div class="dateShaild">
+								<div class="dayShedule">2</div>
 								<div class="dateSheildCart">
-									<div class="montsSheildCart">Lorem ipsum</div>
-									<div class="nameSheildCart">BY: <span class="nameAuthor">JOHN MASLOV</span> CEO</div>
+									<div class="montsSheildCart">October</div>
+									<div class="timeSheildCart">07:00AM - 07:45AM</div>
+								</div>
+							</div>
+							<div class="person">
+								<div class="imgSheild">
+									<img src="img/sheild2.png" alt="">
+								</div>
+								<div class="nameShaild">
+									<div class="dateSheildCart">
+										<div class="montsSheildCart">Sit amet ipsum</div>
+										<div class="nameSheildCart">BY: <span class="nameAuthor">DANIIL IVANOV</span> Web-expert</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="shedule">
+							<div class="dateShaild">
+								<div class="dayShedule">2</div>
+								<div class="dateSheildCart">
+									<div class="montsSheildCart">October</div>
+									<div class="timeSheildCart">08:00AM - 08:45AM</div>
+								</div>
+							</div>
+							<div class="person">
+								<div class="imgSheild">
+									<img src="img/sheild3.png" alt="">
+								</div>
+								<div class="nameShaild">
+									<div class="dateSheildCart">
+										<div class="montsSheildCart">Dolor si amet</div>
+										<div class="nameSheildCart">BY: <span class="nameAuthor">ROBERT MARKUS</span> PROGRAMMER</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="shedule">
-						<div class="dateShaild">
-							<div class="dayShedule">2</div>
-							<div class="dateSheildCart">
-								<div class="montsSheildCart">October</div>
-								<div class="timeSheildCart">07:00AM - 07:45AM</div>
+					<div id="tableDay2" class="tableNone">
+						<div class="shedule">
+							<div class="dateShaild">
+								<div class="dayShedule">3</div>
+								<div class="dateSheildCart">
+									<div class="montsSheildCart">October</div>
+									<div class="timeSheildCart">06:00AM - 06:45AM</div>
+								</div>
+							</div>
+							<div class="person">
+								<div class="imgSheild">
+									<img src="img/sheild1.png" alt="">
+								</div>
+								<div class="nameShaild">
+									<div class="dateSheildCart">
+										<div class="montsSheildCart">Lorem ip</div>
+										<div class="nameSheildCart">BY: <span class="nameAuthor">JOHN MASLOV</span> CEO</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="person">
-							<div class="imgSheild">
-								<img src="img/sheild2.png" alt="">
-							</div>
-							<div class="nameShaild">
+
+						<div class="shedule">
+							<div class="dateShaild">
+								<div class="dayShedule">3</div>
 								<div class="dateSheildCart">
-									<div class="montsSheildCart">Sit amet ipsum</div>
-									<div class="nameSheildCart">BY: <span class="nameAuthor">DANIIL IVANOV</span> Web-expert</div>
+									<div class="montsSheildCart">October</div>
+									<div class="timeSheildCart">07:00AM - 07:45AM</div>
+								</div>
+							</div>
+							<div class="person">
+								<div class="imgSheild">
+									<img src="img/sheild2.png" alt="">
+								</div>
+								<div class="nameShaild">
+									<div class="dateSheildCart">
+										<div class="montsSheildCart">Amet amet ipsum</div>
+										<div class="nameSheildCart">BY: <span class="nameAuthor">DANIIL IVANOV</span> Web-expert</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="shedule">
+							<div class="dateShaild">
+								<div class="dayShedule">3</div>
+								<div class="dateSheildCart">
+									<div class="montsSheildCart">October</div>
+									<div class="timeSheildCart">08:00AM - 08:45AM</div>
+								</div>
+							</div>
+							<div class="person">
+								<div class="imgSheild">
+									<img src="img/sheild3.png" alt="">
+								</div>
+								<div class="nameShaild">
+									<div class="dateSheildCart">
+										<div class="montsSheildCart">Si si amet</div>
+										<div class="nameSheildCart">BY: <span class="nameAuthor">ROBERT MARKUS</span> PROGRAMMER</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="shedule">
-						<div class="dateShaild">
-							<div class="dayShedule">2</div>
-							<div class="dateSheildCart">
-								<div class="montsSheildCart">October</div>
-								<div class="timeSheildCart">08:00AM - 08:45AM</div>
+					<div id="tableDay3" class="tableNone">
+						<div class="shedule">
+							<div class="dateShaild">
+								<div class="dayShedule">4</div>
+								<div class="dateSheildCart">
+									<div class="montsSheildCart">October</div>
+									<div class="timeSheildCart">06:00AM - 06:45AM</div>
+								</div>
+							</div>
+							<div class="person">
+								<div class="imgSheild">
+									<img src="img/sheild1.png" alt="">
+								</div>
+								<div class="nameShaild">
+									<div class="dateSheildCart">
+										<div class="montsSheildCart">Dolor ipsum</div>
+										<div class="nameSheildCart">BY: <span class="nameAuthor">JOHN MASLOV</span> CEO</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="person">
-							<div class="imgSheild">
-								<img src="img/sheild3.png" alt="">
-							</div>
-							<div class="nameShaild">
+
+						<div class="shedule">
+							<div class="dateShaild">
+								<div class="dayShedule">4</div>
 								<div class="dateSheildCart">
-									<div class="montsSheildCart">Dolor si amet</div>
-									<div class="nameSheildCart">BY: <span class="nameAuthor">ROBERT MARKUS</span> PROGRAMMER</div>
+									<div class="montsSheildCart">October</div>
+									<div class="timeSheildCart">07:00AM - 07:45AM</div>
+								</div>
+							</div>
+							<div class="person">
+								<div class="imgSheild">
+									<img src="img/sheild2.png" alt="">
+								</div>
+								<div class="nameShaild">
+									<div class="dateSheildCart">
+										<div class="montsSheildCart">Sit amet ipsum</div>
+										<div class="nameSheildCart">BY: <span class="nameAuthor">DANIIL IVANOV</span> Web-expert</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="shedule">
+							<div class="dateShaild">
+								<div class="dayShedule">4</div>
+								<div class="dateSheildCart">
+									<div class="montsSheildCart">October</div>
+									<div class="timeSheildCart">08:00AM - 08:45AM</div>
+								</div>
+							</div>
+							<div class="person">
+								<div class="imgSheild">
+									<img src="img/sheild3.png" alt="">
+								</div>
+								<div class="nameShaild">
+									<div class="dateSheildCart">
+										<div class="montsSheildCart">Dolor si amet</div>
+										<div class="nameSheildCart">BY: <span class="nameAuthor">ROBERT MARKUS</span> PROGRAMMER</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="button_register dowmloadButton">
-						Download PDF
+						<a href="https://yandex.ru/">Download PDF</a>
 					</div>
 				</div>
 			</div>
