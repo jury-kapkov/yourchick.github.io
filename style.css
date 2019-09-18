@@ -659,10 +659,12 @@ footer {
 
 #map {
 	position: relative;
-	opacity: 0.7;
+	/*opacity: 0.7;*/
 	overflow: hidden;
 }
-
+ymaps {
+	opacity: 0.90 !important;
+}
 /*#map:before {
 	content: "";
 	width: 100%;
